@@ -1,0 +1,30 @@
+# ölfilter & maintenance
+prefix oa: <http://www.w3.org/ns/oa#>
+
+SELECT * WHERE {
+  
+?annotation oa:hasTarget ?target .
+
+{
+    ?target  oa:refinedBy ?textselector .
+    ?textselector oa:exact ?text .
+} union { 
+    ?target oa:hasSelector  ?selector .
+    ?selector oa:refinedBy  ?textselector .
+    ?textselector oa:exact ?text .
+} union { 
+    ?target oa:hasSelector  ?textselector .
+    ?textselector rdf:value  ?text .
+}
+  
+  # ?annotation  oa:hasBody <http://iirds.tekom.de/iirds#Operation> .
+  # ?annotation oa:hasBody <http://iirds.tekom.de/iirds#Maintenance> .
+  # ?annotation  oa:hasBody <http://iirds.tekom.de/iirds#TechnicalData> .
+  # ?annotation oa:hasBody <http://people.aifb.kit.edu/mu2771/step#offset_unit> .
+
+
+FILTER(regex(str(?text), "Orlofwerk", "i")) 
+#FILTER(regex(str(?text), "Operation", "i")) 
+
+
+}

@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!-- Meta, title, CSS, favicons, etc. -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>CPRN Auftrag Details</title>
+
+<!-- Bootstrap -->
+<link href="../vendors/bootstrap/dist/css/bootstrap.min.css"
+	rel="stylesheet">
+<!-- Font Awesome -->
+<link href="../vendors/font-awesome/css/font-awesome.min.css"
+	rel="stylesheet">
+<!-- NProgress -->
+<link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+
+<!-- tiny editor -->
+<link href="../vendors/summernote/dist/summernote.css" rel="stylesheet">
+
+<!-- Custom Theme Style -->
+<!--<link href="../build/css/custom.css" rel="stylesheet">   -->
+<link href="../build/css/custom.css" rel="stylesheet">
+<style>
+.editorbox {
+	background-color: #cccccc
+}
+
+#editor {
+	overflow: scroll;
+	min-height: 300px;
+	max-height: 300px
+}
+</style>
+
+
+<!-- Awesomplete
+		<link rel="stylesheet" href="../vendors/awesomplete/awesomplete.css" />
+		<script src="../vendors/awesomplete/awesomplete.js" async></script> -->
+</head>
+
+<body class="nav-md">
+	<div class="container body">
+		<div class="main_container">
+			<div class="col-md-3 left_col">
+				<div class="left_col scroll-view" id="menu">
+					<div class="clearfix"></div>
+					<div w3-include-html="fragments/menu.html"></div>
+				</div>
+			</div>
+
+			<div w3-include-html="fragments/topnav.html"></div>
+
+			<!-- page content -->
+			<div class="right_col" role="main">
+				<div class="">
+					<div class="page-title">
+						<div class="title_left">
+							<h3>Auftrag 12345</h3>
+						</div>
+
+						<div class="title_right">
+							<div
+								class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
+								<div class="input-group">
+									<input type="text" class="form-control"
+										placeholder="Search for..."> <span
+										class="input-group-btn">
+										<button class="btn btn-default" type="button">Go!</button>
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="x_panel">
+								<div class="x_title">
+									<h2>Details</h2>
+									<div class="clearfix"></div>
+								</div>
+								<div class="x_content">
+									<!--<p>Austausch Richtplatten in 6 Drucklinien. Betroffen
+										Maschinen 3,4,8,12 in Halle 2 und 18,19 in Halle 3. Halle 2
+										bitte zuerst bearbeiten, da hier ab 15 Uhr wieder gedruckt
+										werden soll. Für Maschine 8 ist zu prüfen, ob bei letzter
+										Abnahme das Prüfsiegel gezeichnet wurde.</p>-->
+									<p></p>
+
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="x_panel">
+								<div class="x_title">
+									<h2>Historie</h2>
+									<div class="clearfix"></div>
+								</div>
+								<div class="x_content">
+									<table class="table table-hover">
+										<thead>
+											<tr>
+												<th class="col-md-1">Datum</th>
+												<th class="col-md-2">Beschreibung</th>
+												<th class="col-md-1">Auftrag Nr.</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>17.05.2017</td>
+												<td>Richtplattentausch nach pCall</td>
+												<td>07125</td>
+											</tr>
+											<tr>
+												<td>12.05.2017</td>
+												<td>pCall: Richtplatten Tausch erforderlich in 40 Tagen</td>
+												<td>-</td>
+											</tr>
+											<tr>
+												<td>18.04.2016</td>
+												<td>Standard Wartung 2-jährig</td>
+												<td>05928</td>
+											</tr>
+											<tr>
+												<td>20.03.2016</td>
+												<td>SW Upgrade OffestBest2016</td>
+												<td>05213</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="x_panel">
+								<div class="x_title">
+									<h2>Prozess</h2>
+									<div class="clearfix"></div>
+								</div>
+								<div class="x_content">
+									<div id="rootwizard">
+										<div class="stepwizard">
+											<div class="stepwizard-row">
+												<div class="stepwizard-step">
+													<a href="#tab1" data-toggle="tab"
+														class="btn btn-default btn-circle stepbtn disabled">1</a>
+													<p>Auftrag starten</p>
+												</div>
+												<div class="stepwizard-step">
+													<a href="#tab2" data-toggle="tab"
+														class="btn btn-default btn-circle stepbtn disabled">2</a>
+													<p>Auftrag bearbeiten</p>
+												</div>
+												<div class="stepwizard-step">
+													<a href="#tab3" data-toggle="tab"
+														class="btn btn-default btn-circle stepbtn">3</a>
+													<p>Auftrag abschließen</p>
+												</div>
+											</div>
+										</div>
+										<div class="tab-content">
+											<div class="tab-pane" id="tab1">
+												<p>Was man zum starten des Prozess braucht...</p>
+											</div>
+											<div class="tab-pane" id="tab2">
+												<p>Informationen während dem Prozess, z.B. Verzögerung,
+													verbrauchte Teile, Notizen... --> GO</p>
+											</div>
+											<div class="tab-pane active" id="tab3">
+												<div class="col-md-12">
+													<!--  <form name=MyForm>   
+														<input type=button value="Auf Null setzen" onclick="ClearСlock()">  
+														<input name=stopwatch size=10 value="00:00:00.00">  
+														<input type=button value="Start/Stop" onclick="StartStop()"> 
+													</form>-->
+													Einsatz Nummer: <div id="einsatz" class="summernote"></div> <!--  <input id="name" class="form-control" placeholder="" value=""/>-->
+													Name: <div id="name" class="summernote"></div> <!--  <input id="name" class="form-control" placeholder="" value=""/>-->
+													Kunde: <div id="kunde" class="summernote"></div><!--<input id="kunde" class="form-control" placeholder="" value=""/>-->
+													Maschinentyp: <div id="maschinentyp" class="summernote"></div><!--<input id="maschinentyp" class="form-control" placeholder="" value=""/>-->
+													Maschinen-ID: <div id="maschinenid" class="summernote"></div><!--<input id="maschinenid" class="form-control" placeholder="" value=""/>-->
+													Fehlercode: <div id="fehlercode" class="summernote"></div><!--<input id="fehlercode" class="form-control" placeholder="" value=""/>-->
+													Komponente: <div id="komponente" class="summernote"></div><!--<input id="komponente" class="form-control" placeholder="" value=""/>-->
+													Einsatzbericht:
+													<div id="editor" class="summernote"></div>
+													<div class="btn-group">
+														<button id="send" type="button" class="btn btn-primary" onclick="StartStop()">Senden</button>
+													</div>
+													
+												</div>
+
+												<!-- <div class="col-md-3">
+													<p>Schlagworte aus Kontext:</p>
+													<ul class="keywords">
+														<li class="ctword ctentity" data-type="entity">Kunde
+															1</li>
+														<li class="ctword ctentity" data-type="entity">Halle
+															1</li>
+														<li class="ctword ctentity" data-type="entity">Halle
+															2</li>
+														<li class="ctword ctentity" data-type="entity">Bandantriebswalze</li>
+														<li class="ctword ctpraed" data-type="verb">geprüft</li>
+														<li class="ctword ctpraed" data-type="prop">sehr gut</li>
+														<li class="ctword ctpraed" data-type="prop">fehlerhaft</li>
+														<li class="ctword ctpraed" data-type="prop">mangelhaft</li>
+													</ul>
+												</div> -->
+											</div>
+											<!--
+                                                <div style="float:right">
+                                                    <input type='button' class='btn button-next' name='next' value='Next' />
+                                                </div>
+                                                <div style="float:left">
+                                                    <input type='button' class='btn button-previous' name='previous' value='Previous' />
+                                                </div>
+                                                -->
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="x_panel">
+								<div class="x_title">
+									<h2>Solution Container</h2>
+									<div class="clearfix"></div>
+								</div>
+								<div class="x_content">Ausgewählte Handbücher, Dokumente,
+									Anleitungen usw. aus knox</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /page content -->
+			<!-- footer content -->
+			<div w3-include-html="fragments/footer.html"></div>
+			<!-- /footer content -->
+		</div>
+	</div>
+	<!-- jQuery -->
+	<script src="../vendors/jquery/dist/jquery.min.js"></script>
+	<!-- Bootstrap -->
+	<script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+	<!-- FastClick -->
+	<script src="../vendors/fastclick/lib/fastclick.js"></script>
+	<!-- NProgress -->
+	<script src="../vendors/nprogress/nprogress.js"></script>
+	<!-- jQuery Bootstrap-Wizard -->
+	<script
+		src="../vendors/twitter-bootstrap-wizard/jquery.bootstrap.wizard.min.js"></script>
+	<!-- wysiwyg editor für technikerbericht -->
+	<script src="../vendors/summernote/dist/summernote.js"></script>
+
+	<!-- Custom Theme Scripts -->
+	<script src="../build/js/custom.js"></script>
+	<script>
+	//Timer
+	var base = 60; 
+	var clocktimer,dateObj,dh,dm,ds,ms; 
+	readout=''; 
+	var h=1,m=1,tm=1,s=0,ts=0,ms=0,init=0; 
+	function ClearСlock() { 
+		clearTimeout(clocktimer); 
+		h=1;m=1;tm=1;s=0;ts=0;ms=0; 
+		init=0;
+		readout='00:00:00.00'; 
+	} 
+	function StartTimer() { 
+		var cdateObj = new Date(); 
+		var t = (cdateObj.getTime() - dateObj.getTime())-(s*1000); 
+		if (t>999) { s++; } 
+		if (s>=(m*base)) { 
+			ts=0; 
+			m++; 
+		} else { 
+			ts=parseInt((ms/100)+s); 
+			if(ts>=base) { ts=ts-((m-1)*base); } 
+		} 
+		if (m>(h*base)) { 
+			tm=1; 
+			h++; 
+		} else { 
+			tm=parseInt((ms/100)+m); 
+			if(tm>=base) { tm=tm-((h-1)*base); } 
+		} 
+		ms = Math.round(t/10); 
+		if (ms>99) {ms=0;} 
+		if (ms==0) {ms='00';} 
+		if (ms>0&&ms<=9) { ms = '0'+ms; } 
+		if (ts>0) { ds = ts; if (ts<10) { ds = '0'+ts; }} else { ds = '00'; } 
+		dm=tm-1; 
+		if (dm>0) { if (dm<10) { dm = '0'+dm; }} else { dm = '00'; } 
+		dh=h-1; 
+		if (dh>0) { if (dh<10) { dh = '0'+dh; }} else { dh = '00'; } 
+		readout = dh + ':' + dm + ':' + ds + '.' + ms; 
+		//document.MyForm.stopwatch.value = readout; 
+		clocktimer = setTimeout("StartTimer()",1);
+		console.log(readout);
+	} 
+	function StartStop() { 
+		if (init==0){ 
+			ClearСlock();
+			dateObj = new Date(); 
+			StartTimer(); 
+			init=1; 
+		} else { 
+			clearTimeout(clocktimer);
+			init=0;
+		} 
+	} 
+	</script> 
+	<script>
+		$(document).ready(StartStop());
+		function highlightMarkup(value, type){
+        	return $('<span><em class="' + type + '">' + value + '</em>&nbsp;</span>')[0];
+    	}
+    
+    	function striphtml(html)
+    	{
+       		var tmp = document.createElement("DIV");
+       		tmp.innerHTML = html;
+       		return tmp.textContent || tmp.innerText || "";
+    	}
+    	
+    	function htmlToPlaintext(text) 
+    	{
+    		  return text ? String(text).replace(/<[^>]+>/gm, '') : '';
+    	}
+    	
+    	function getUsedClasses() {
+			var actually_used_classes = [];
+
+			selected_words.forEach( function(item, sameItem, selected_words) {
+				var c = all_classes.get(item);
+				actually_used_classes.push( String(c) );
+			} )
+			
+			return actually_used_classes;
+		}
+
+    	function ChangeEvent(idOfElement) 
+		  { 
+			field_html = $(idOfElement).summernote('code');
+  			field_text = $.trim(striphtml(field_html));
+  			textToSend = String(field_text.match(/\b\w{1,}$/));
+  			if ((textToSend.length < 1) || (textToSend.length == 0)) return;
+			$.ajax({
+				beforeSend: function(request) 
+				{
+					request.setRequestHeader("Accept", "application/string");
+	  			},
+  			//url:'http://localhost:8080/cprn/backend/editorbackend/dictionary', 
+  			url:'/cprn/backend/editorbackend/dictionary', 
+  			type:'POST',
+  			data: textToSend,
+  			success: function(response2)
+  			{
+  				if (words.length >= 15) words = [];
+  				words = response2.split(", ") ;
+  			}
+			});
+		 }
+    	
+        $('li.ctword').click(function(){
+            editor = $('#editor');
+            editor.summernote('restoreRange');  
+            type = $(this).data('type');
+            value = this.innerText;
+            var nodes = highlightMarkup(value, type);
+            editor.summernote('insertNode', nodes);
+            editor.summernote('saveRange');
+        });
+	</script>
+	<!-- Summernote's zone-->
+	<script>
+		var words = [];
+		selected_words = new Set();
+    	all_classes = new Map();
+    	$('a.stepbtn').click(function(){
+            $('a.stepbtn').each(function(index){
+                $(this).removeClass('active');
+            });
+            $(this).addClass('active');
+        });
+	</script>
+	
+	
+		<script>              
+        $(document).ready(function () {
+                //init summernote
+                $('#einsatz').summernote({                 
+                	height: 35,
+                    toolbar: false,
+                    disableResizeEditor: true,
+                    callbacks:
+                    {
+                        onBlur: function()
+                        {
+                        	$('#einsatz').summernote();
+                        },
+                        
+                        onInit: function() 
+                        {
+                          
+                         },
+                          
+                        onChange: function() 
+                        		  { 
+                        			
+                        		 },
+                        onKeyup: function(e) 
+                        {
+                            
+                            
+                        },
+                        		 
+                        // onEnter callback
+                        onEnter: function() {
+                        	
+                        }
+                        		
+
+                      },
+                      placeholder: 'Einsatz Nummer x'
+            });
+        });
+    </script>
+    
+	
+	<script>
+        $(document).ready(function () {
+                //init summernote
+                $('#name').summernote({                 
+                	height: 35,
+                    toolbar: false,
+                    disableResizeEditor: true,
+                    callbacks:
+                    {
+                        onBlur: function()
+                        {
+                        	$('#name').summernote();
+                        },
+
+                          
+                        onChange: function() 
+                        		  { 
+                        			editor_html = $('#name').summernote('code');
+                            		editor_text = $.trim(striphtml(editor_html));
+                            		textToSend = String(editor_text.match(/\b\w{1,}$/));
+                            		if ((textToSend.length < 1) || (textToSend.length == 0)) return;
+                        			$.ajax({
+                    					beforeSend: function(request) 
+                    					{
+                    						request.setRequestHeader("Accept", "application/string");
+                    		  			},
+                            			//url:'http://localhost:8080/cprn/backend/editorbackend/dictionary', 
+                            			url:'/cprn/backend/editorbackend/dictionary', 
+                            			type:'POST',
+                            			data: textToSend,
+                            			success: function(response2)
+                            			{
+                            				if (words.length >= 15) words = [];
+                            				words = response2.split(", ") ;
+                            			}
+                        			});
+                        		 },
+                        onKeyup: function(e) 
+                        {
+                            if(e.keyCode === 190){
+                                editor_html = $('#name').summernote('code');
+                                text = $.trim(striphtml(editor_html));
+                                //remove point
+                                text = text.substring(0, text.length-1);
+                                lastindex = text.lastIndexOf('.');
+                                if(lastindex > 0){
+                                    sentence = text.substring(lastindex, text.length) + '.';
+                                } else {
+                                    sentence = text + ".";
+                                }
+                                console.log("Analyze sentence: " + sentence);
+                            }
+                            
+                            if(e.keyCode === 32){
+                                editor_html = $('#name').summernote('code');
+                                //check if word is emphasized already and therefore has defined semantics
+                                if(editor_html.substring(editor_html.length-9,editor_html.length) === '</em></p>'){
+                                    //new empty span
+                                    $('#name').summernote('insertNode', $('<span>&nbsp;</span>')[0]);
+                                } else {
+                                    text = $.trim(striphtml(editor_html));
+                                    word = text.substring(text.lastIndexOf(' '), text.length);
+                                    console.log("Analyze word: " + word);
+                                }
+                            }
+                            
+                        },
+
+                      },
+                    placeholder: 'Name des Arbeiters'
+                  });
+            });
+
+    </script>
+	
+	<script>              
+        $(document).ready(function () {
+                //init summernote
+                $('#kunde').summernote({                 
+                	height: 35,
+                    toolbar: false,
+                    disableResizeEditor: true,
+                    callbacks:
+                    {
+                        onBlur: function()
+                        {
+                        	$('#kunde').summernote();
+                        },
+                          
+                        onChange: function() 
+                        		  { 
+                        			editor_html = $('#kunde').summernote('code');
+                            		editor_text = $.trim(striphtml(editor_html));
+                            		textToSend = String(editor_text.match(/\b\w{1,}$/));
+                            		if ((textToSend.length < 1) || (textToSend.length == 0)) return;
+                        			$.ajax({
+                    					beforeSend: function(request) 
+                    					{
+                    						request.setRequestHeader("Accept", "application/string");
+                    		  			},
+                            			//url:'http://localhost:8080/cprn/backend/editorbackend/dictionary', 
+                            			url:'/cprn/backend/editorbackend/dictionary', 
+                            			type:'POST',
+                            			data: textToSend,
+                            			success: function(response2)
+                            			{
+                            				if (words.length >= 15) words = [];
+                            				words = response2.split(", ") ;
+                            			}
+                        			});
+                        		 },
+                        onKeyup: function(e) 
+                        {
+                            if(e.keyCode === 190){
+                                editor_html = $('#kunde').summernote('code');
+                                text = $.trim(striphtml(editor_html));
+                                //remove point
+                                text = text.substring(0, text.length-1);
+                                lastindex = text.lastIndexOf('.');
+                                if(lastindex > 0){
+                                    sentence = text.substring(lastindex, text.length) + '.';
+                                } else {
+                                    sentence = text + ".";
+                                }
+                                console.log("Analyze sentence: " + sentence);
+                            }
+                            
+                            if(e.keyCode === 32){
+                                editor_html = $('#kunde').summernote('code');
+                                //check if word is emphasized already and therefore has defined semantics
+                                if(editor_html.substring(editor_html.length-9,editor_html.length) === '</em></p>'){
+                                    //new empty span
+                                    $('#kunde').summernote('insertNode', $('<span>&nbsp;</span>')[0]);
+                                } else {
+                                    text = $.trim(striphtml(editor_html));
+                                    word = text.substring(text.lastIndexOf(' '), text.length);
+                                    console.log("Analyze word: " + word);
+                                }
+                            }
+                            
+                        },
+
+                      },
+                    placeholder: 'Kundenname'
+                  });
+            });
+
+    </script>
+	
+	<script>              
+        $(document).ready(function () {
+                //init summernote
+                $('#maschinentyp').summernote({                 
+                	height: 35,
+                    toolbar: false,
+                    disableResizeEditor: true,
+                    callbacks:
+                    {
+                        onBlur: function()
+                        {
+                        	$('#maschinentyp').summernote();
+                        },
+                          
+                        onChange: function() 
+                        		  { 
+                        			editor_html = $('#maschinentyp').summernote('code');
+                            		editor_text = $.trim(striphtml(editor_html));
+                            		textToSend = String(editor_text.match(/\b\w{1,}$/));
+                            		if ((textToSend.length < 1) || (textToSend.length == 0)) return;
+                        			$.ajax({
+                    					beforeSend: function(request) 
+                    					{
+                    						request.setRequestHeader("Accept", "application/string");
+                    		  			},
+                            			//url:'http://localhost:8080/cprn/backend/editorbackend/dictionary', 
+                            			url:'/cprn/backend/editorbackend/dictionary', 
+                            			type:'POST',
+                            			data: textToSend,
+                            			success: function(response2)
+                            			{
+                            				if (words.length >= 15) words = [];
+                            				words = response2.split(", ") ;
+                            			}
+                        			});
+                        		 },
+                        onKeyup: function(e) 
+                        {
+                            if(e.keyCode === 190){
+                                editor_html = $('#maschinentyp').summernote('code');
+                                text = $.trim(striphtml(editor_html));
+                                //remove point
+                                text = text.substring(0, text.length-1);
+                                lastindex = text.lastIndexOf('.');
+                                if(lastindex > 0){
+                                    sentence = text.substring(lastindex, text.length) + '.';
+                                } else {
+                                    sentence = text + ".";
+                                }
+                                console.log("Analyze sentence: " + sentence);
+                            }
+                            
+                            if(e.keyCode === 32){
+                                editor_html = $('#maschinentyp').summernote('code');
+                                //check if word is emphasized already and therefore has defined semantics
+                                if(editor_html.substring(editor_html.length-9,editor_html.length) === '</em></p>'){
+                                    //new empty span
+                                    $('#maschinentyp').summernote('insertNode', $('<span>&nbsp;</span>')[0]);
+                                } else {
+                                    text = $.trim(striphtml(editor_html));
+                                    word = text.substring(text.lastIndexOf(' '), text.length);
+                                    console.log("Analyze word: " + word);
+                                }
+                            }
+                            
+                        },   		 
+
+                      },
+                    placeholder: 'Typ/Art der Maschine'
+                  });
+            });
+
+    </script>
+    
+    <script>              
+        $(document).ready(function () {
+                //init summernote
+                $('#maschinenid').summernote({                 
+                	height: 35,
+                    toolbar: false,
+                    disableResizeEditor: true,
+                    callbacks:
+                    {
+                        onBlur: function()
+                        {
+                        	$('#maschinenid').summernote();
+                        },
+                          
+                        onChange: function() 
+                        		  { 
+                        			editor_html = $('#maschinenid').summernote('code');
+                            		editor_text = $.trim(striphtml(editor_html));
+                            		textToSend = String(editor_text.match(/\b\w{1,}$/));
+                            		if ((textToSend.length < 1) || (textToSend.length == 0)) return;
+                        			$.ajax({
+                    					beforeSend: function(request) 
+                    					{
+                    						request.setRequestHeader("Accept", "application/string");
+                    		  			},
+                            			//url:'http://localhost:8080/cprn/backend/editorbackend/dictionary', 
+                            			url:'/cprn/backend/editorbackend/dictionary', 
+                            			type:'POST',
+                            			data: textToSend,
+                            			success: function(response2)
+                            			{
+                            				if (words.length >= 15) words = [];
+                            				words = response2.split(", ") ;
+                            			}
+                        			});
+                        		 },
+                        onKeyup: function(e) 
+                        {
+                            if(e.keyCode === 190){
+                                editor_html = $('#maschinenid').summernote('code');
+                                text = $.trim(striphtml(editor_html));
+                                //remove point
+                                text = text.substring(0, text.length-1);
+                                lastindex = text.lastIndexOf('.');
+                                if(lastindex > 0){
+                                    sentence = text.substring(lastindex, text.length) + '.';
+                                } else {
+                                    sentence = text + ".";
+                                }
+                                console.log("Analyze sentence: " + sentence);
+                            }
+                            
+                            if(e.keyCode === 32){
+                                editor_html = $('#maschinenid').summernote('code');
+                                //check if word is emphasized already and therefore has defined semantics
+                                if(editor_html.substring(editor_html.length-9,editor_html.length) === '</em></p>'){
+                                    //new empty span
+                                    $('#maschinenid').summernote('insertNode', $('<span>&nbsp;</span>')[0]);
+                                } else {
+                                    text = $.trim(striphtml(editor_html));
+                                    word = text.substring(text.lastIndexOf(' '), text.length);
+                                    console.log("Analyze word: " + word);
+                                }
+                            }
+                            
+                        },
+                        		 
+
+                      },
+                    placeholder: 'ID der Maschine'
+                  });
+            });
+
+    </script>
+	
+	<script>              
+        $(document).ready(function () {
+                //init summernote
+                $('#fehlercode').summernote({                 
+                	height: 35,
+                    toolbar: false,
+                    disableResizeEditor: true,
+                    callbacks:
+                    {
+                        onBlur: function()
+                        {
+                        	$('#fehlercode').summernote();
+                        },
+                          
+                        onChange: function() 
+                        		  { 
+                        			editor_html = $('#fehlercode').summernote('code');
+                            		editor_text = $.trim(striphtml(editor_html));
+                            		textToSend = String(editor_text.match(/\b\w{1,}$/));
+                            		if ((textToSend.length < 1) || (textToSend.length == 0)) return;
+                        			$.ajax({
+                    					beforeSend: function(request) 
+                    					{
+                    						request.setRequestHeader("Accept", "application/string");
+                    		  			},
+                            			//url:'http://localhost:8080/cprn/backend/editorbackend/dictionary', 
+                            			url:'/cprn/backend/editorbackend/dictionary', 
+                            			type:'POST',
+                            			data: textToSend,
+                            			success: function(response2)
+                            			{
+                            				if (words.length >= 15) words = [];
+                            				words = response2.split(", ") ;
+                            			}
+                        			});
+                        		 },
+                        onKeyup: function(e) 
+                        {
+                            if(e.keyCode === 190){
+                                editor_html = $('#fehlercode').summernote('code');
+                                text = $.trim(striphtml(editor_html));
+                                //remove point
+                                text = text.substring(0, text.length-1);
+                                lastindex = text.lastIndexOf('.');
+                                if(lastindex > 0){
+                                    sentence = text.substring(lastindex, text.length) + '.';
+                                } else {
+                                    sentence = text + ".";
+                                }
+                                console.log("Analyze sentence: " + sentence);
+                            }
+                            
+                            if(e.keyCode === 32){
+                                editor_html = $('#fehlercode').summernote('code');
+                                //check if word is emphasized already and therefore has defined semantics
+                                if(editor_html.substring(editor_html.length-9,editor_html.length) === '</em></p>'){
+                                    //new empty span
+                                    $('#fehlercode').summernote('insertNode', $('<span>&nbsp;</span>')[0]);
+                                } else {
+                                    text = $.trim(striphtml(editor_html));
+                                    word = text.substring(text.lastIndexOf(' '), text.length);
+                                    console.log("Analyze word: " + word);
+                                }
+                            }
+                            
+                        },
+                      },
+                    placeholder: 'Nummer des Fehlers'
+                  });
+            });
+
+    </script>
+	
+	<script>              
+        $(document).ready(function () {
+                //init summernote
+                $('#komponente').summernote({                 
+                	height: 35,
+                    toolbar: false,
+                    disableResizeEditor: true,
+                    callbacks:
+                    {
+                        onBlur: function()
+                        {
+                        	$('#komponente').summernote();
+                        },
+                          
+                        onChange: function() 
+                        		  { 
+                        			editor_html = $('#komponente').summernote('code');
+                            		editor_text = $.trim(striphtml(editor_html));
+                            		textToSend = String(editor_text.match(/\b\w{1,}$/));
+                            		if ((textToSend.length < 1) || (textToSend.length == 0)) return;
+                        			$.ajax({
+                    					beforeSend: function(request) 
+                    					{
+                    						request.setRequestHeader("Accept", "application/string");
+                    		  			},
+                            			//url:'http://localhost:8080/cprn/backend/editorbackend/dictionary', 
+                            			url:'/cprn/backend/editorbackend/dictionary', 
+                            			type:'POST',
+                            			data: textToSend,
+                            			success: function(response2)
+                            			{
+                            				if (words.length >= 15) words = [];
+                            				words = response2.split(", ") ;
+                            			}
+                        			});
+                        		 },
+                        onKeyup: function(e) 
+                        {
+                            if(e.keyCode === 190){
+                                editor_html = $('#komponente').summernote('code');
+                                text = $.trim(striphtml(editor_html));
+                                //remove point
+                                text = text.substring(0, text.length-1);
+                                lastindex = text.lastIndexOf('.');
+                                if(lastindex > 0){
+                                    sentence = text.substring(lastindex, text.length) + '.';
+                                } else {
+                                    sentence = text + ".";
+                                }
+                                console.log("Analyze sentence: " + sentence);
+                            }
+                            
+                            if(e.keyCode === 32){
+                                editor_html = $('#komponente').summernote('code');
+                                //check if word is emphasized already and therefore has defined semantics
+                                if(editor_html.substring(editor_html.length-9,editor_html.length) === '</em></p>'){
+                                    //new empty span
+                                    $('#komponente').summernote('insertNode', $('<span>&nbsp;</span>')[0]);
+                                } else {
+                                    text = $.trim(striphtml(editor_html));
+                                    word = text.substring(text.lastIndexOf(' '), text.length);
+                                    console.log("Analyze word: " + word);
+                                }
+                            }
+                            
+                        },
+                        		 
+
+                      },
+                    placeholder: 'Welche Komponente muss ausgewechselt/repariert/usw... werden sein'
+                  });
+            });
+
+    </script>
+	
+	<script>             
+        $(document).ready(function () {
+                //init summernote
+                $('#editor').summernote({                  
+                	height: 100,
+                    toolbar: false,
+                    //airMode: true,
+             		callbacks:
+                    {
+                        onBlur: function()
+                        {
+                        	$('#editor').summernote();
+                        },
+                        onInit: function() 
+                        {
+                            popover = $('.note-hint-popover').find('.popover-content');
+                            popover.on('click', '.note-hint-item', function () { 
+                            	var selected = popover.find('.active')[0].innerText;
+                            	selected_words.add(selected);
+                        });
+                            
+                         },
+                          
+                        onChange: function() 
+                        		  { 
+                        			editor_html = $('#editor').summernote('code');
+                            		editor_text = $.trim(striphtml(editor_html));
+                            		textToSend = String(editor_text.match(/\b\w{1,}$/));
+                            		if ((textToSend.length < 1) || (textToSend.length == 0)) return;
+                        			$.ajax({
+                    					beforeSend: function(request) 
+                    					{
+                    						request.setRequestHeader("Accept", "application/string");
+                    		  			},
+                            			//url:'http://localhost:8080/cprn/backend/editorbackend/dictionary', 
+                            			url:'/cprn/backend/editorbackend/dictionary', 
+                            			type:'POST',
+                            			data: textToSend,
+                            			success: function(response2)
+                            			{
+                            				if (words.length >= 15) words = [];
+                            				words = response2.split(", ") ;
+                            			}
+                        			});
+                        		 },
+                        onKeyup: function(e) 
+                        {
+                            if(e.keyCode === 190){
+                                editor_html = $('#editor').summernote('code');
+                                text = $.trim(striphtml(editor_html));
+                                //remove point
+                                text = text.substring(0, text.length-1);
+                                lastindex = text.lastIndexOf('.');
+                                if(lastindex > 0){
+                                    sentence = text.substring(lastindex, text.length) + '.';
+                                } else {
+                                    sentence = text + ".";
+                                }
+                                console.log("Analyze sentence: " + sentence);
+                            }
+                            
+                            if(e.keyCode === 32){
+                                editor_html = $('#editor').summernote('code');
+                                //check if word is emphasized already and therefore has defined semantics
+                                if(editor_html.substring(editor_html.length-9,editor_html.length) === '</em></p>'){
+                                    //new empty span
+                                    $('#editor').summernote('insertNode', $('<span>&nbsp;</span>')[0]);
+                                } else {
+                                    text = $.trim(striphtml(editor_html));
+                                    word = text.substring(text.lastIndexOf(' '), text.length);
+                                    console.log("Analyze word: " + word);
+                                }
+                            }
+                            
+                        },
+                        		 
+                        // onEnter callback
+                        onEnter: function() {
+                        	var selected = $('.note-hint-item.active')[0].innerText;
+                        	selected_words.add(selected);
+                        	
+                        }
+
+                      },
+                    placeholder: 'Problembeschreibung, Lösungsweg, usw...'
+                  });
+            });
+
+    </script>
+	<script>
+	 $('#send').click(function()
+		        {
+		        	einsatz_html = $('#einsatz').summernote('code');
+		        	name_html = $('#name').summernote('code');
+		        	kunde_html = $('#kunde').summernote('code');
+		        	maschinentyp_html = $('#maschinentyp').summernote('code');
+		        	maschinenid_html = $('#maschinenid').summernote('code');
+		        	fehlercode_html = $('#fehlercode').summernote('code');
+		        	komponente_html = $('#komponente').summernote('code');
+		        	editor_html = $('#editor').summernote('code');
+		        	
+		        	name_text = $.trim(striphtml(name_html));
+		        	einsatz_text = $.trim(striphtml(einsatz_html));
+		        	kunde_text = $.trim(striphtml(kunde_html));
+		        	maschinentyp_text = $.trim(striphtml(maschinentyp_html));
+		        	maschinenid_text = $.trim(striphtml(maschinenid_html));
+		        	fehlercode_text = $.trim(striphtml(fehlercode_html));
+		        	komponente_text = $.trim(striphtml(komponente_html));
+		        	editor_text = $.trim(striphtml(editor_html));
+		        	var formData = 
+		        	{
+		    	            "Einsatz":htmlToPlaintext(einsatz_text),
+		    	            "Name":htmlToPlaintext(name_text),
+		    	            "Kunde":htmlToPlaintext(kunde_text),
+		    	            "Maschinentyp":htmlToPlaintext(maschinentyp_text),
+		    	            "Maschinen-ID":htmlToPlaintext(maschinenid_text),
+		    	            "Fehlercode":htmlToPlaintext(fehlercode_text),
+		    	            "Komponente":htmlToPlaintext(komponente_text),
+		    	            "Einsatzbericht":htmlToPlaintext(editor_text),
+		    	            "Classes":getUsedClasses(),
+		    	            "Time": String(readout),
+		    	            "Evaluation":"Plazebo"
+		    		};
+		        	$.ajax({
+		        		beforeSend: function(request) {
+		        			request.setRequestHeader("Content-Type", "text/plain");
+		        		    request.setRequestHeader("Accept", "application/ld+json");
+		        		  },
+		                  //url:'http://localhost:8080/cprn/backend/editorbackend/toJsonLD', 
+		                  url:'/cprn/backend/editorbackend/savereport', 
+		                type:'POST',
+		                data:JSON.stringify(formData),
+		                success: function(response)
+		                {
+		                	var json = JSON.stringify(response["@graph"]);
+		                	alert("Bitte schließen Sie den Browser und gehen Sie zum nächsten Einsatz.");
+		                }
+		            });
+		        });
+        </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+# dryer & TechnicalData
+prefix oa: <http://www.w3.org/ns/oa#>
+
+SELECT * WHERE {
+  
+?annotation oa:hasTarget ?target .
+
+{
+    ?target  oa:refinedBy ?textselector .
+    ?textselector oa:exact ?text .
+} union { 
+    ?target oa:hasSelector  ?selector .
+    ?selector oa:refinedBy  ?textselector .
+    ?textselector oa:exact ?text .
+} union { 
+    ?target oa:hasSelector  ?textselector .
+    ?textselector rdf:value  ?text .
+}
+  
+
+FILTER(regex(str(?text), "bogenkontrolle", "i")) 
+#FILTER(regex(str(?text), "wartung", "i")) 
+
+
+
+}
