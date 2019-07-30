@@ -9,7 +9,7 @@
 
 	<properties>
 		<rdf4j.version>2.2</rdf4j.version>
-		<lucene.version>5.0.0</lucene.version>
+		<lucene.version>7.1.0</lucene.version>
 		<jetty.version>9.2.21.v20170120</jetty.version>
 		<nxparser.group>org.semanticweb.yars</nxparser.group>
 		<nxparser.version>3.0.0-SNAPSHOT</nxparser.version>
