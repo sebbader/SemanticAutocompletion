@@ -8,7 +8,7 @@
 
 
 	<properties>
-		<lucene.version>5.0.0</lucene.version>
+		<lucene.version>7.1.0</lucene.version>
 		<nxparser.group>com.github.nxparser.nxparser</nxparser.group>
 		<nxparser.version>3dd34fc0fd1843614112e02fa048ba6aff82faa5</nxparser.version>
 	</properties>
