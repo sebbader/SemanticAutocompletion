@@ -10,7 +10,7 @@
 	<properties>
 		<rdf4j.version>2.2</rdf4j.version>
 		<lucene.version>7.1.0</lucene.version>
-		<jetty.version>9.2.21.v20170120</jetty.version>
+		<jetty.version>9.4.41.v20210516</jetty.version>
 		<nxparser.group>org.semanticweb.yars</nxparser.group>
 		<nxparser.version>3.0.0-SNAPSHOT</nxparser.version>
 		<!-- <nxparser.group>com.github.nxparser.nxparser</nxparser.group> <nxparser.version>3dd34fc0fd1843614112e02fa048ba6aff82faa5</nxparser.version> -->
